@@ -1,0 +1,19 @@
+http://www.engbedded.com/fusecalc/
+
+Comando para gravação do bootloader micronucleus com pino de reset desabilitado
+
+Windows
+C:\arduino-1.8.2\hardware\tools\avr/bin/avrdude -C C:\arduino-1.8.2\hardware\tools\avr/etc/avrdude.conf -v -pattiny85 -cstk500v1 -PCOM3 -b19200 -Uflash:w:C:\Users\fabio\Downloads\Arduino\micronucleus\firmware\releases/t85_default.hex:i -U lfuse:w:0xe1:m -U efuse:w:0xfe:m -U hfuse:w:0x5d:m
+
+Linux:
+/home/fbs/Downloads/arduino-1.8.8/hardware/tools/avr/bin/avrdude -C /home/fbs/Downloads/arduino-1.8.8/hardware/tools/avr/etc/avrdude.conf -v -pattiny85 -cstk500v1 -P/dev/ttyACM0 -b19200 -Uflash:w:/home/fbs/Downloads/micronucleus-master/firmware/releases/t85_default.hex:i -U lfuse:w:0xF1:m -U efuse:w:0xfe:m -U hfuse:w:0x5D:m
+
+
+Código Franzmakey
+
+Windows
+C:\Users\fabio\AppData\Local\Arduino15\packages\digistump\tools\micronucleus\2.0a4/launcher -cdigispark --timeout 60 -Uflash:w:C:\Users\fabio\AppData\Local\Temp\arduino_build_530258/FRANZmakey_V1.ino.hex:i 
+
+
+Linux
+/home/fbs/.arduino15/packages/digistump/tools/micronucleus/2.0a4/launcher -cdigispark --timeout 60 -Uflash:w:/home/fbs/Dropbox/Novas-Placas-Franzininho/FranzMakey-DIY/firmware/FRANZmakey.ino.hex:i 

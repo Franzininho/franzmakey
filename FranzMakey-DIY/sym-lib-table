@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name Franzininho-eagle-import)(type Legacy)(uri ${KIPRJMOD}/Franzininho-eagle-import.lib)(options "")(descr ""))
+  (lib (name FranzMakeyDIY-rescue)(type Legacy)(uri ${KIPRJMOD}/FranzMakeyDIY-rescue.lib)(options "")(descr ""))
+)
